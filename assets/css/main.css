@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+::selection {
+  color: #121417;
+  background-color: #fb7413; }
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Overpass', sans-serif;
+  color: #fafafa;
+  background-color: #121417; }
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+.rate {
+  background: linear-gradient(to bottom, #212731, #161d27);
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 22rem; }
+  .rate__icon {
+    width: fit-content;
+    padding: 0.8rem;
+    background-color: #27303a;
+    border-radius: 50%; }
+    .rate__icon img {
+      width: 0.8rem; }
+  .rate__img {
+    width: 10rem;
+    margin: 1rem auto; }
+  .rate__selected {
+    color: #fb7413;
+    background-color: rgba(124, 135, 152, 0.2);
+    border-radius: 100vw;
+    margin: 1.5rem auto;
+    padding: 5px 10px;
+    font-size: 0.9rem; }
+  .rate__title {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem; }
+  .rate__txt {
+    font-size: 0.9rem;
+    color: #7c8798;
+    margin: 0 0 1.3rem; }
+  .rate__numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+    .rate__numbers button {
+      color: #7c8798;
+      background-color: #27303a;
+      font-size: 0.9rem;
+      border: 0;
+      outline: 0;
+      border-radius: 50%;
+      padding: 0.75rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+      transition: all 250ms ease 0s; }
+      .rate__numbers button:hover {
+        background-color: #959eac;
+        color: #fafafa; }
+      .rate__numbers button:focus {
+        color: #fafafa;
+        background-color: #fb7413; }
+  .rate__btn {
+    color: #fafafa;
+    background-color: #fb7413;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 0;
+    outline: 0;
+    border-radius: 100vw;
+    padding: 0.7rem 0;
+    cursor: pointer;
+    transition: all 250ms ease 0s; }
+    .rate__btn:hover {
+      color: #fb7413;
+      background-color: #fafafa; }
+  .rate .text-center {
+    text-align: center; }

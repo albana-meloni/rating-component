@@ -1,0 +1,93 @@
+.rate {
+  background: linear-gradient(
+    to bottom,
+    hsl(215, 20%, 16%),
+    hsl(215, 27%, 12%)
+  );
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 22rem;
+  &__icon {
+    width: fit-content;
+    padding: 0.8rem;
+    background-color: hsl(210, 19%, 19%);
+    border-radius: 50%;
+    img {
+      width: 0.8rem;
+    }
+  }
+  &__img {
+    width: 10rem;
+    margin: 1rem auto;
+  }
+  &__selected {
+    color: map-get($colors, myOrange);
+    background-color: rgba($color: hsl(216, 12%, 54%), $alpha: 0.2);
+    border-radius: 100vw;
+    margin: 1.5rem auto;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+  &__title {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+  }
+  &__txt {
+    font-size: 0.9rem;
+    color: map-get($colors, myMediumGray);
+    margin: 0 0 1.3rem;
+  }
+  &__numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    button {
+      color: map-get($colors, myMediumGray);
+      background-color: hsl(210, 19%, 19%);
+      font-size: 0.9rem;
+      border: 0;
+      outline: 0;
+      border-radius: 50%;
+      padding: 0.75rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+      transition: all 250ms ease 0s;
+      &:hover {
+        background-color: map-get($colors, myLightGray);
+        color: map-get($colors, myWhite);
+      }
+      &:focus {
+        color: map-get($colors, myWhite);
+        background-color: map-get($colors, myOrange);
+      }
+    }
+  }
+  &__btn {
+    color: map-get($colors, myWhite);
+    background-color: map-get($colors, myOrange);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 0;
+    outline: 0;
+    border-radius: 100vw;
+    padding: 0.7rem 0;
+    cursor: pointer;
+    transition: all 250ms ease 0s;
+    &:hover {
+      color: map-get($colors, myOrange);
+      background-color: map-get($colors, myWhite);
+    }
+  }
+  .text-center {
+    text-align: center;
+  }
+}
